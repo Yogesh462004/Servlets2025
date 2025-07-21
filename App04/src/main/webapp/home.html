@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>City Selection</title>
+  <script>
+    function sendReq() {
+      document.getElementById("cityForm").submit();
+    }
+  </script>
+</head>
+<body>
+
+  <form id="cityForm" action="country" method="post">
+    <label for="city">Select City:</label>
+    <select name="city" id="city" onchange="sendReq()">
+      <option value="">--Select--</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Bangalore">Bangalore</option>
+    </select>
+  </form>
+   <a href='country'>CALL FOR DATE</a>
+</body>
+</html>
